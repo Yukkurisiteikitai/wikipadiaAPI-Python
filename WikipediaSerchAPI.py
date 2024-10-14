@@ -83,7 +83,7 @@ def RandomWordsSerch(count :int):
                 print("SerchEnd")
                 break
 
+#ランダムに単語を取得するAPI
 RandomWordsSerch(100)
 
-# for i in range(len(words)):
-#     get_wikipedia_summary(words[i])
+#シンプルに
