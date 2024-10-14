@@ -1,0 +1,2 @@
+# wikipadiaAPI-Python
+pythonバージョンのwikipadiaAPIのコードです
