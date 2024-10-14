@@ -2,7 +2,7 @@ import requests
 import random
 
 
-
+#wikipediaの記事のタイトルから検索をかけて存在したら説明を表示するAPI
 def get_wikipedia_summary(title):
     # Wikipedia APIのURL
     url = "https://en.wikipedia.org/w/api.php"
@@ -51,9 +51,7 @@ def cheackWikiFound(title):
     else:
         print("エラーが発生しました。")
         return False
-# タイトルを指定してWikipediaから説明文を取得
-title = "discord"  # 検索するタイトル
-get_wikipedia_summary(title)
+
 words = ["a","q","z","w","s","x","e","d","c","r","f","v","t","g","b","y","h","n","u","j","m","i","k",",","o","l","p","Q","W","E","R","T","Y","U","I","O","P","A","S","D","F","G","H","J","K","L","Z","X","C","V","B","N","M"]
 
 def j(n,l):
@@ -83,7 +81,9 @@ def RandomWordsSerch(count :int):
                 print("SerchEnd")
                 break
 
-#ランダムに単語を取得するAPI
+#ランダムに単語を取得してその説明文を表示する関数.
 RandomWordsSerch(100)
 
-#シンプルに
+# タイトルを指定してWikipediaから説明文を取得して表示する.
+title = "discord"  # 検索するタイトル.
+get_wikipedia_summary(title)
