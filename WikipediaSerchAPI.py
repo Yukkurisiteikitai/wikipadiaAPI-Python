@@ -54,18 +54,11 @@ def cheackWikiFound(title):
 
 words = ["a","q","z","w","s","x","e","d","c","r","f","v","t","g","b","y","h","n","u","j","m","i","k",",","o","l","p","Q","W","E","R","T","Y","U","I","O","P","A","S","D","F","G","H","J","K","L","Z","X","C","V","B","N","M"]
 
-def j(n,l):
-    t = ""
-    for i in range(n):
-        t += l[random.randint(0,len(l)-1)]
-    return t
-
 def words_settings(n):
     t = ""
     for i in range(n):
         t += words[random.randint(0,len(words)-1)]
     return t
-
 
 def RandomWordsSerch(count :int):
     global words
